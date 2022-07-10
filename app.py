@@ -27,7 +27,9 @@ def bucket_post():
     }
     db.bucket.insert_one(doc)
 
+
     return jsonify({'msg': 'POST등록 완료'})
+
 
 
 @app.route("/bucket/done", methods=["POST"])
